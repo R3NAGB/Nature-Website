@@ -1,0 +1,441 @@
+/* Styling for header */
+header {
+    background-image: url('/img/main.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    margin: 0 20px;
+    gap: 40px;
+
+
+}
+
+/* Logo styling */
+.logo img {
+    max-height: 50px;
+}
+
+/* Menu bar icon for small screens */
+.menu-bar {
+    display: none;
+    /* មិនបង្ហាញនៅលើអេក្រង់ធំៗ */
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Default nav-bar styling */
+.nav-bar {
+    display: flex;
+    gap: 40px;
+    margin: 0 10px;
+    align-items: center;
+}
+
+/* Styling for navigation links */
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 5px;
+}
+
+.nav-bar ul li a:hover {
+    color: sandybrown;
+    border-bottom: 3px solid sandybrown;
+}
+
+/* Styling for time display */
+.time {
+    border: 2px solid white;
+    padding: 8px 15px;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* ពណ៌ថ្លាស្រាលសម្រាប់ពេលវេលា */
+}
+
+.time:hover {
+
+    background-color: chocolate;
+}
+
+/* start Home-page */
+.home-page {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+
+}
+
+.Home-tille {
+    font-size: 80px;
+    color: aliceblue;
+    font-weight: 900;
+
+}
+
+.Home-para {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Home-para p {
+    color: rgb(111, 110, 109);
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+.button-home {
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+}
+
+.btn-home {
+    padding-bottom: 100px;
+}
+
+.button-home:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-home:active {
+    transform: scale(0.95);
+}
+
+
+
+.servies-tital {
+    font-size: 50px;
+    font-weight: 600;
+    color: #F09819;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    /* padding: 20px; */
+    padding: 20px 15%;
+    box-sizing: border-box;
+
+
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    width: 250px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    overflow: hidden;
+    /* height: 100%; */
+}
+
+.card-title {
+    font-size: 20px;
+    color: #653b01;
+    padding-left: 4px;
+}
+
+.card-description {
+    color: #7b7b7b;
+}
+
+.profile {
+    padding: 20px 15%;
+    background-color: #a1a1a1eb;
+    margin-top: 7%;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.profile-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #585858;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.image {
+    position: relative;
+    top: 10px;
+    left: 50%;
+    width: 70px;
+}
+
+.about-container {
+    padding: 20px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.about-title h2 {
+    font-size: 20px;
+    font-weight: 200;
+    color: rgb(9, 106, 74);
+
+}
+
+.about-title h3 {
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(227, 166, 122);
+}
+
+.about-title p {
+    color: #278f65aa;
+}
+
+.about-btn {
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    cursor: pointer;
+    color: #278f65aa;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #F09819;
+    transition: transform 0.2s;
+
+}
+
+.about-btn:hover {
+    transform: translateX(-5px)
+}
+
+.about-img {
+
+    img {
+        width: 100%;
+        height: 100%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+}
+
+.contact-container {
+    background-image: url("/img/main-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    margin-top: 3rem;
+    /* height: 100vh; */
+}
+
+.contact-conten {
+    padding: 4rem;
+    text-align: center;
+}
+
+.contact-conten h1 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 5rem;
+    color: #F09819;
+}
+
+.contact-conten p {
+    color: #585858;
+}
+
+.contact-btn {
+    background-color: #dd8809;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px 0 #006699;
+    margin-bottom: 30px;
+    /* width: 350px; */
+    animation: example 1s infinite;
+}
+
+@keyframes example {
+    0% {
+        background-color: #008CBA;
+    }
+
+    50% {
+        background-color: #006699;
+    }
+
+    100% {
+        background-color: #008CBA;
+    }
+}
+
+.fooder {
+    padding: 20px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fooder-nav {
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    li a {
+        text-decoration: none;
+        color: peru;
+
+    }
+}
+
+/* Responsive styling for smaller screens */
+
+
+
+
+@media (max-width: 768px) {
+
+    /* Adjust header height for smaller screens */
+    header {
+        height: 300px;
+    }
+
+    .time {
+        display: none;
+    }
+
+    /* Hide nav-bar initially and display menu icon */
+    .nav-bar {
+        display: none;
+        /* មិនបង្ហាញដំបូង */
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px;
+        position: absolute;
+        top: 80px;
+        right: 80px;
+        width: 70%;
+    }
+
+    /* Show menu bar icon */
+    .menu-bar {
+        display: block;
+    }
+
+    /* Show nav-bar when active */
+    .nav-bar.active {
+        display: flex;
+    }
+
+    /* Make nav-bar items stack vertically on mobile */
+    .nav-bar ul {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .card-container {
+        display: inline-block;
+        text-align: center;
+        padding: 10% 5rem;
+
+        .card {
+            margin-bottom: 3rem;
+            padding: 5rem;
+        }
+    }
+
+    .home-page {
+        display: none;
+    }
+
+    .about-container {
+        display: block;
+        margin: 20px;
+    }
+
+    .about-btn {
+        margin-bottom: 20px;
+    }
+
+    .fooder {
+
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 10px;
+        line-height: 4rem;
+
+    }
+}
